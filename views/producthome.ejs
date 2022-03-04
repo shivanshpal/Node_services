@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%=title%>
+    </title>
+</head>
+
+<body>
+
+    <H1>All registered Products</H1>
+    <ul>
+        <%for(let i of product_list){%>
+            <li>
+                <div>
+                    <%=i.name%>
+                        <br>
+                        <%=i.price%>
+                            <br>
+                            <%=i.skucode%>
+                                <br>
+                                <%=i.modelno%>
+                                    <br>
+                                    <%=i.delivery%>
+                                        <br>
+                                        <%=i.description%>
+                                            <br>
+                                            <%=i.stock%>
+                                                <br>
+                </div>
+
+            </li>
+            <%}%>
+    </ul>
+    <h3><a href='/products/addproduct'> ADD MORE PRODUCTS</a></h3>
+</body>
+
+</html>
